@@ -55,7 +55,7 @@ export default function Index() {
                     <p>From basic design components like color paletes and custom container</p>
                 </div>
                 <div className={styles.column}>
-                    <p>to complex thing such as transition and animation for your component. SAK is the way to go </p>
+                    <p>To complex thing such as transition and animation for your component. SAK is the way to go </p>
                 </div>
             </div>
 

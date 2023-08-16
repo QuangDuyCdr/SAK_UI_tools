@@ -4,7 +4,36 @@ import styles from './style.module.css';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import dynamic from 'next/dynamic';
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+let interval = null;
+
+if (typeof window !== 'undefined') {
+document.querySelector("h1").onmouseover = event => {  
+  let iteration = 0;
+  
+  clearInterval(interval);
+  
+  interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter, index) => {
+        if(index < iteration) {
+          return event.target.dataset.value[index];
+        }
+      
+        return letters[Math.floor(Math.random() * 26)]
+      })
+      .join("");
+    
+    if(iteration >= event.target.dataset.value.length){ 
+      clearInterval(interval);
+    }
+    
+    iteration += 1 / 3;
+  }, 30);
+} }
 export default function Index() {
 
     const background = useRef(null);
@@ -49,7 +78,7 @@ export default function Index() {
                             priority={true}
                         />
                     </div>
-                    <h1 data-scroll data-scroll-speed="0.7">SAK TOOLKITS</h1>
+                    <h1 data-scroll data-scroll-speed="0.7" data-value="SAK TOOLKITS">SAK TOOLKITS</h1>
              </div>
         </div>
     )
