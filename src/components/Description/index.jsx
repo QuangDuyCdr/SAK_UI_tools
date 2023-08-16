@@ -3,7 +3,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
 import styles from './style.module.css';
 
-const phrases = ["Designing UI don't have to be painful.", "SAK is a hub for basics designing tools", "for your designer's needs."]
+const phrases = ["Designing UI don't have to be painful.", "Swiss Army Knife Toolkits is a hub ", "for basics UI designing tools."]
 
 export default function Index() {
 
