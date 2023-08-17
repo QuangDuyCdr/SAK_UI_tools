@@ -15,7 +15,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className={styles.main} data-barba="container" data-barba-namespace="about-section">
+    <main className={styles.main}>
 <Header/>
       </main>
   )
