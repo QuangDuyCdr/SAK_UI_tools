@@ -12,7 +12,7 @@
     filter: brightness(60%);
 }
 
-.backgroundImage img{
+.backgroundImage video{
     object-fit: cover;
 }
 
@@ -52,6 +52,6 @@
   }
   
   .intro h1:hover {
-    background-color: white;
-    color: black;
+    
+    color: white;
   }

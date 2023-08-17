@@ -20,7 +20,7 @@ export default function Index() {
         <Link className ={styles.navLink} href="/Animation">Animation</Link>
        </div>
        <div className={styles.contactList}>
-        
+        <a href="https://github.com/QuangDuyCdr"><Image src={'/images/github-logo.svg'} alt='Github logo' width={30} height={30}/></a>
        </div>
     </div>
   )
