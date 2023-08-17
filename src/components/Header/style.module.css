@@ -1,0 +1,27 @@
+.headerContainer{
+display: flex;
+max-width: auto;
+align-items: center;
+border-bottom: 2;
+padding: 1rem;
+height: 24;
+justify-content: space-between;
+}
+
+.navList{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 2;
+}
+.navLink {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem;
+
+}
+.logoImage{
+
+padding-left: 1rem;
+}

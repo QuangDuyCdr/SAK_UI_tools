@@ -4,8 +4,8 @@ import styles from './style.module.css';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import dynamic from 'next/dynamic';
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%";
 
 let interval = null;
 
@@ -23,7 +23,7 @@ document.querySelector("h1").onmouseover = event => {
           return event.target.dataset.value[index];
         }
       
-        return letters[Math.floor(Math.random() * 26)]
+        return letters[Math.floor(Math.random() * 41)]
       })
       .join("");
     
