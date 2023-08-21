@@ -3,6 +3,7 @@
 body{
   margin: 0px;
   background-color: black;
-  cursor:wait
+  cursor:wait;
+  overflow: hidden;
 }
 

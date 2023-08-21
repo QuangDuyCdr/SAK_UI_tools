@@ -24,3 +24,6 @@ padding-left: 2rem;
 .contactList{
 padding-right: 2rem
 }
+.navLink p{color: white;
+  }
+.navLink p:hover{color: grey;}

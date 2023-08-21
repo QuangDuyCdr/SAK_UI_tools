@@ -5,7 +5,7 @@ import Intro from '../components/Intro';
 import Description from '../components/Description';
 import Projects from '../components/Projects';
 import Header from '../components/Header';
-import Preloader from '../components/Preloader'
+
 
 export default function Home() {
 
@@ -25,7 +25,7 @@ export default function Home() {
   return (
       <main className={styles.main} >
         <Header />
-        { isLoading && <Preloader/> }
+        
         <Intro />
         <Description />
         <Projects />

@@ -17,6 +17,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
 <Header/>
+<h1 className={styles.headLine} >Color Palete</h1>
+<div className={styles.container}><p>insert mockup and them picker here</p></div>
       </main>
   )
 }
