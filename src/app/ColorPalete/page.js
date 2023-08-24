@@ -2,7 +2,8 @@
 import { useEffect } from 'react';
 import styles from './page.module.css'
 import Header from '../../components/Header';
-
+import Mockup from '../../components/Mockup';
+import Palete from '../../components/Paletes'
 export default function Home() {
 
   useEffect( () => {
@@ -19,6 +20,8 @@ export default function Home() {
 <Header/>
 <h1 className={styles.headLine} >Color Palete</h1>
 <div className={styles.container}><p>insert mockup and them picker here</p></div>
+<Mockup />
+<Palete />
       </main>
   )
 }

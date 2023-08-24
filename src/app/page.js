@@ -15,9 +15,6 @@ export default function Home() {
       async () => {
           const LocomotiveScroll = (await import('locomotive-scroll')).default
           const locomotiveScroll = new LocomotiveScroll();
-
-
-        setTimeout(()=>{setLoading(false);document.body.style.cursor ='default';},2000)
       }
     )()
   }, [])
@@ -25,7 +22,6 @@ export default function Home() {
   return (
       <main className={styles.main} >
         <Header />
-        
         <Intro />
         <Description />
         <Projects />
